@@ -47,6 +47,11 @@ security:
         # - { path: ^/profile, roles: ROLE_USER }
 
         - { path: ^/api/login, roles: PUBLIC_ACCESS }
+
+        - { path: ^/api/visiteurs, roles: PUBLIC_ACCESS, methods: [POST] }
+        # - ACTION A MODIFIER ICI (CREATION UTILISATEUR NON AUTHENTIFIER)
+
+
         - { path: ^/api,       roles: IS_AUTHENTICATED_FULLY }
 
 
